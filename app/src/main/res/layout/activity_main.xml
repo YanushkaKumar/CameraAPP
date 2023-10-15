@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Preview for the selected or captured image -->
+    <ImageView
+        android:id="@+id/image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="377dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="67dp"
+        android:layout_marginBottom="287dp"
+        android:scaleType="centerCrop" />
+
+
+    <Button
+        android:id="@+id/select_image_button"
+        android:layout_width="68dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="186dp"
+        android:background="@drawable/baseline_insert_photo_24" />
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="68dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="162dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/baseline_double_arrow_24" />
+
+    <Button
+        android:id="@+id/capture_image_button"
+        android:layout_width="68dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="245dp"
+        android:layout_marginBottom="182dp"
+        android:layout_toStartOf="@+id/select_image_button"
+        android:background="@drawable/baseline_photo_camera_24" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="360dp"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="47dp"
+        android:text="Upload Image "
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:text="CancerAssist"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+
+</RelativeLayout>
