@@ -169,10 +169,12 @@ class MainActivity : AppCompatActivity() {
                     try {
                         val responseBody = response.body?.string()
                         val json = JSONObject(responseBody)
-                        val result = json.getString("response")
+                        val predictedClass = json.getString("class")
+                        val predictedProbability = json.getDouble("probability")
 
                         runOnUiThread {
-                            resultTextView.text = result
+                            resultTextView.text =
+                                "Predicted Class: $predictedClass\n\nProbability: $predictedProbability"
                         }
                     } catch (e: JSONException) {
                         runOnUiThread {
